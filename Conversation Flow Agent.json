@@ -1,0 +1,94 @@
+{
+  "agent_id": "",
+  "channel": "voice",
+  "last_modification_timestamp": 1773670443356,
+  "agent_name": "Conversation Flow Agent",
+  "response_engine": {
+    "type": "conversation-flow",
+    "version": 1,
+    "conversation_flow_id": "conversation_flow_d86a3c706c99"
+  },
+  "language": "es-ES",
+  "data_storage_setting": "everything",
+  "opt_in_signed_url": false,
+  "version": 1,
+  "is_published": false,
+  "post_call_analysis_model": "gpt-4.1-mini",
+  "pii_config": {
+    "mode": "post_call",
+    "categories": []
+  },
+  "voice_id": "retell-Cimo",
+  "max_call_duration_ms": 3600000,
+  "interruption_sensitivity": 0.9,
+  "allow_user_dtmf": true,
+  "user_dtmf_options": {},
+  "conversationFlow": {
+    "conversation_flow_id": "conversation_flow_d86a3c706c99",
+    "version": 1,
+    "global_prompt": "Here is a strong copy-paste prompt you can use in Vibe Coding / AI website builders (Lovable, Bolt, Replit, Durable, etc.) to create a sexy restaurant website + AI receptionist for El Cangrejo con Guayabera.\nThis prompt tells the AI exactly what to build so it looks premium and actually useful for customers. 🦀✨\n\n⸻\n\nPROMPT (COPY & PASTE)\n\nBuild a modern, sexy restaurant website with an AI receptionist for a restaurant called El Cangrejo con Guayabera.\n\nThe website should feel luxury, tropical, and vibrant, inspired by coastal Ecuador and Guayaquil seafood culture.\n\nDesign style:\n\t•\tDark tropical theme\n\t•\tColors: deep ocean blue, coral red, gold accents, white text\n\t•\tCinematic seafood photography\n\t•\tSmooth animations\n\t•\tElegant typography\n\t•\tMobile-first design\n\t•\tPremium restaurant vibe like Michelin seafood restaurants\n\nThe website must include a 24/7 AI receptionist chatbot that can answer questions, help customers reserve tables, and provide menu information.\n\n⸻\n\nHERO SECTION\n\nLarge cinematic background video of fresh seafood and crab dishes.\n\nHeadline:\n“Auténtico Sabor Guayaco en Quito”\n\nSubheadline:\nExperience the best Ecuadorian crab and coastal seafood in a vibrant atmosphere.\n\nButtons:\n\t•\tReserve a Table\n\t•\tView Menu\n\t•\tChat with Receptionist\n\n⸻\n\nAI RECEPTIONIST (IMPORTANT)\n\nCreate a floating AI receptionist chat widget in the bottom corner.\n\nThe AI receptionist should act like a friendly restaurant host.\n\nIt should automatically greet visitors with:\n\n“Hola 👋 Bienvenido a El Cangrejo con Guayabera.\n¿Quieres reservar una mesa, ver el menú o hacer una pregunta?”\n\nThe AI receptionist should answer questions about:\n\nReservations\nMenu items\nOpening hours\nLocation\nParking\nFamily friendly options\nWiFi availability\n\nRestaurant information the AI should know:\n\nName: El Cangrejo con Guayabera\nPhone: 096 359 9749\nAddress: Tomas de Berlanga N43 E7A e, Isla Santa Fe, Quito 170501\n\nHours:\nOpen daily until 10 PM\n\nService options:\n\t•\tReservations required\n\t•\tWiFi available\n\t•\tKids menu available\n\nThe AI should also offer quick buttons:\n\nReserve a Table\nView Menu\nCall Restaurant\nGet Directions\n\n⸻\n\nABOUT SECTION\n\nTitle:\nLa Experiencia del Cangrejo\n\nDescription:\nEl Cangrejo con Guayabera brings the authentic flavors of Ecuador’s coast to Quito. Known for its famous crab dishes and Guayaquil-inspired recipes, the restaurant delivers fresh seafood, bold flavor, and unforgettable dining experiences.\n\n⸻\n\nFEATURED DISHES\n\nCreate a modern grid showing popular dishes:\n\nCangrejos\nCangrejo al Ajillo\nConchas Asadas con Cangrejo\nCanasta de Patacón con Cangrejo\n\nEach dish should include:\n\t•\tImage\n\t•\tShort description\n\t•\tPrice placeholder\n\n⸻\n\nSOCIAL PROOF\n\nDisplay rating section:\n\n⭐ 4.5 / 5 rating\n550+ reviews\n\nCustomer testimonial cards.\n\n⸻\n\nRESERVATION SECTION\n\nSimple reservation form:\n\nName\nPhone\nNumber of guests\nDate\nTime\n\nButton:\nReserve Table\n\n⸻\n\nLOCATION SECTION\n\nEmbed Google Maps with the restaurant location.\n\nAddress:\n\nTomas de Berlanga N43 E7A e\nIsla Santa Fe\nQuito 170501\n\nButtons:\nGet Directions\nCall Restaurant\n\n⸻\n\nPHOTO GALLERY\n\nModern masonry gallery of restaurant food, atmosphere, and guests.\n\n⸻\n\nFOOTER\n\nInclude:\n\nRestaurant name\nAddress\nPhone\nOpening hours\nSocial media icons (Facebook, Instagram)\n\nTagline:\n\nEl Cangrejo con Guayabera — Auténtico Sabor Guayaco\n\n⸻\n\nTECH FEATURES\n\nSEO optimized\nFast loading\nMobile responsive\nSmooth animations\nSticky navbar\nAI receptionist chatbot\nReservation system\nMenu section\nGoogle Maps integration\n\n⸻\n\n💡 Tip (this is powerful):\nIf you want, I can also give you a “AI restaurant receptionist SaaS prompt” that restaurants will pay $50–$300/month for — which could help you start making money with this.",
+    "nodes": [
+      {
+        "instruction": {
+          "type": "static_text",
+          "text": "Hello this is customer support department, how can I help you today?"
+        },
+        "name": "Welcome Node",
+        "edges": [
+          {
+            "id": "edge-1",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User needs to return the package"
+            }
+          },
+          {
+            "id": "edge-2",
+            "transition_condition": {
+              "type": "prompt",
+              "prompt": "User needs to check the order status"
+            }
+          }
+        ],
+        "start_speaker": "agent",
+        "id": "start-node-1773670102608",
+        "type": "conversation",
+        "display_position": {
+          "x": 342,
+          "y": 433
+        }
+      },
+      {
+        "name": "End Call",
+        "id": "end-call-node-1773670102608",
+        "type": "end",
+        "display_position": {
+          "x": 742,
+          "y": 433
+        },
+        "instruction": {
+          "type": "prompt",
+          "text": "Politely end the call"
+        }
+      }
+    ],
+    "start_node_id": "start-node-1773670102608",
+    "start_speaker": "agent",
+    "model_choice": {
+      "type": "cascading",
+      "model": "gpt-4.1"
+    },
+    "tool_call_strict_mode": true,
+    "knowledge_base_ids": [],
+    "kb_config": {
+      "top_k": 3,
+      "filter_score": 0.6
+    },
+    "begin_tag_display_position": {
+      "x": 122,
+      "y": 333
+    },
+    "is_published": false,
+    "is_transfer_cf": false
+  }
+}
